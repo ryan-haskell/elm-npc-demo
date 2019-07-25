@@ -141,12 +141,12 @@ apply =
 dispositionGenerator : Generator Disposition
 dispositionGenerator =
     R.constant Disposition
-        |> apply (R.int 1 10)
-        |> apply (R.int 1 10)
-        |> apply (R.int 1 10)
-        |> apply (R.int 1 10)
-        |> apply (R.int 1 10)
-        |> apply (R.int 1 10)
+        |> apply (R.int 1 50)
+        |> apply (R.int 1 50)
+        |> apply (R.int 1 50)
+        |> apply (R.int 1 50)
+        |> apply (R.int 1 50)
+        |> apply (R.int 1 50)
 
 
 emotionGenerator : Disposition -> Generator Emotion
@@ -480,6 +480,7 @@ viewDispositions character =
                         [ strong [ style "width" "6rem" ] [ text label ]
                         , span
                             [ style "display" "block"
+                            , style "min-width" "26px"
                             , style "width" (String.fromFloat (percentage / 2) ++ "em")
                             , style "padding" "0.25em 0.5em"
                             , style "margin-right" "0.5em"
