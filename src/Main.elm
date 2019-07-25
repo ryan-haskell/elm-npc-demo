@@ -347,11 +347,11 @@ viewCharacter character =
                     |> (\( first, second ) ->
                             if first /= second then
                                 [ first, second ]
-                                    |> List.map toDescriptionString
+                                    |> List.map seeks
                                     |> String.join " and "
 
                             else
-                                "True " ++ toDescriptionString first
+                                "True " ++ seeks first
                        )
                     |> text
                 ]
@@ -400,8 +400,8 @@ toString archetype =
             "Caregiver"
 
 
-toDescriptionString : Archetype -> String
-toDescriptionString archetype =
+seeks : Archetype -> String
+seeks archetype =
     case archetype of
         Ruler ->
             "Control"
