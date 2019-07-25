@@ -477,7 +477,7 @@ viewDispositions character =
                         [ style "display" "flex"
                         , style "align-items" "center"
                         ]
-                        [ strong [ style "width" "6rem" ] [ text label ]
+                        [ strong [ style "width" "10rem" ] [ text label ]
                         , span
                             [ style "display" "block"
                             , style "min-width" "26px"
