@@ -209,6 +209,7 @@ humanNameGenerator =
         , "Keegan"
         , "Sean"
         , "David"
+        , "Jackie"
         , "Jeff"
         , "Alexa"
         , "Jessica"
