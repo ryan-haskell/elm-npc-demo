@@ -477,11 +477,11 @@ viewDispositions character =
                         [ style "display" "flex"
                         , style "align-items" "center"
                         ]
-                        [ strong [ style "width" "10rem" ] [ text label ]
+                        [ strong [ style "width" "6rem" ] [ text label ]
                         , span
                             [ style "display" "block"
                             , style "min-width" "26px"
-                            , style "width" (String.fromFloat (percentage / 2) ++ "em")
+                            , style "width" (String.fromFloat (percentage / 1.5) ++ "em")
                             , style "padding" "0.25em 0.5em"
                             , style "margin-right" "0.5em"
                             , style "background" color
