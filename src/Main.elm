@@ -347,11 +347,11 @@ viewCharacter character =
                     |> (\( first, second ) ->
                             if first /= second then
                                 [ first, second ]
-                                    |> List.map toFullString
+                                    |> List.map toDescriptionString
                                     |> String.join " and "
 
                             else
-                                "True " ++ toFullString first
+                                "True " ++ toDescriptionString first
                        )
                     |> text
                 ]
@@ -400,44 +400,44 @@ toString archetype =
             "Caregiver"
 
 
-toFullString : Archetype -> String
-toFullString archetype =
+toDescriptionString : Archetype -> String
+toDescriptionString archetype =
     case archetype of
         Ruler ->
-            "Ruler (Control)"
+            "Control"
 
         Creator ->
-            "Creator (Innovation)"
+            "Innovation"
 
         Innocent ->
-            "Innocent (Safety)"
+            "Safety"
 
         Sage ->
-            "Sage (Knowledge)"
+            "Knowledge"
 
         Explorer ->
-            "Explorer (Freedom)"
+            "Freedom"
 
         Outlaw ->
-            "Outlaw (Liberation)"
+            "Liberation"
 
         Hero ->
-            "Hero (Mastery)"
+            "Mastery"
 
         Wizard ->
-            "Wizard (Power)"
+            "Power"
 
         Jester ->
-            "Jester (Pleasure)"
+            "Pleasure"
 
         Everyman ->
-            "Everyman (Belonging)"
+            "Belonging"
 
         Lover ->
-            "Lover (Intimacy)"
+            "Intimacy"
 
         Caregiver ->
-            "Caregiver (Service)"
+            "Service"
 
 
 viewDispositions : Character -> Html msg
